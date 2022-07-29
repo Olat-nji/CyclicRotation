@@ -1,0 +1,11 @@
+function solution($A, $K) {
+    if(count($A)==0){
+        return $A;
+    }
+
+    for ($i=0;$i<$K;$i++){
+        $t=array_pop($A);
+        array_unshift($A,$t);;
+    }
+    return $A;
+}
